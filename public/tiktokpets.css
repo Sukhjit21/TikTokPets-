@@ -1,0 +1,63 @@
+/* CSS for elements on video input screen */
+
+input {
+    font-weight: 400;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 3px 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    border: 1px solid transparent; /* Adding transparent border to avoid weird movement whenever border is added. */
+}
+
+input[type=text]:focus {
+    border: 1px solid turquoise;
+}
+
+label {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.formfields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 390px;
+    width: 390px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-70deg, var(--cyan), 60%, var(--magenta));
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+@media screen and (max-width:600px) {
+  #app {
+      width: 320px;
+    }
+  }
+}
